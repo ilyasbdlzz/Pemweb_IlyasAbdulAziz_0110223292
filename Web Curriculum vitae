@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae Ilyas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            border-bottom: 1px solid #ccc;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header align = "center">
+            <div>
+            <img style= "border: 10px solid black;border-radius:600px;"
+     src="fotodiri.jpg" width="300px" height="300px">
+            <h1 align="left">Ilyas Abdul Aziz</h1>
+            <h4>NIM : 0110223292</h4>
+            <p>Jl. H. Samali No.29 RT/RW 014/001 Kel. Pejaten Barat Kec. Pasar Minggu, Jakarta Selatan</p>
+            <p>Telepon: (+62)857 9725 7153</p>
+
+        </header>
+
+        <div class="section">
+            <h2>Pendidikan</h2>
+            <ul>
+                    <li><strong>SD</strong> - SD Islam An-Nizomiyah, 2016 </li>
+                    <li><strong>SMP</strong> - SMP Daarunnajah Cipining Bogor, 2018</li>
+                    <li><strong>SMP</strong> - Pesantren Tahfizh Miftahul Falah, 2020</li>
+                    <li><strong>SMA</strong> - SMAIT Al Qudwah Depok, 2022</li>
+                    <li><strong>Sekolah Tinggi</strong> - STT Terpadu Nurul Fikri, sekarang</li>
+            </ul>
+
+        <div class="section">
+            <h2>Skill</h2>
+            <ul>
+                <li>Menguasai Microsoft Office (Word, Powerpoint, Excel)</li>
+                <li>Dapat bekerja sama dengan Team (Teamwork)</li>
+                <li>Data Analyst, Cyber Security</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Bahasa</h2>
+            <ul>
+                <li>Inggris - 50%</li>
+                <li>Arab - 75%</li>
+                <li>Indonesia - 90%</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
