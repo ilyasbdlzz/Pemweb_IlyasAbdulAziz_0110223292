@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Barang Online</title>
+    <style>
+        /* Base styles for the navigation bar */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        
+        .navbar a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        /* Hover effect */
+        .navbar a:hover {
+            background-color: #555;
+            transition: all .2s ease-in-out;
+        }
+            /* Gaya untuk checkbox */
+            .green-checkbox input[type="checkbox"] {
+                appearance: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                width: 20px;
+                height: 20px;
+                background-color: green; /* Warna latar belakang checkbox hijau */
+                border: 2px solid darkgreen; /* Warna border checkbox */
+                border-radius: 5px; /* Menghasilkan checkbox berbentuk persegi panjang dengan sudut bulat */
+                outline: none;
+            }
+            .green-checkbox input[type="checkbox"]:checked {
+                background-color: lightgreen; /* Warna latar belakang checkbox saat dicentang */
+            }
+        </style>
+</head>
+<body>
+    <div 
+    class="navbar" style="background-color: #333; overflow: hidden; display: flex; justify-content: space-between;">
+        <a href="*" style="float: left; display: block; color: #ffffff; text-align: center; padding: 14px 16px; text-decoration: none;">Home |</a>
+        <a href="*" style="float: left; display: block; color: #ffffff; text-align: center; padding: 14px 16px; text-decoration: none;">Generate Link |</a>
+        <a href="*" style="float: left; display: block; color: #ffffff; text-align: center; padding: 14px 16px; text-decoration: none;">Transaction History |</a>
+        <a href="*" style="float: left; display: block; color: #ffffff; text-align: center; padding: 14px 16px; text-decoration: none;">Policy |</a>
+        <a href="*" style="float: left; display: block; color: #ffffff; text-align: center; padding: 14px 16px; text-decoration: none;">Log Out |</a>
+    </div>
+    <div 
+    class="column" style="float: left; text-align: left; width: 30%; padding: 10px;">
+    <table>
+        <tr>
+            <td>
+        <img id="imagePreview" src="persegi.png" alt="Image Preview" alt="boxkosong"style="max-width: 300px; max-height:300px; display: none;">
+        <input type="file" id="imageUpload" accept="image/*" onchange="previewImage()">
+            </td>   
+        </tr>
+        <script>
+            function previewImage() {
+                var input = document.getElementById('imageUpload');
+                var preview = document.getElementById('imagePreview');
+                
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+                    reader.onload = function(e) {
+                        preview.src = e.target.result;
+                        preview.style.display = 'block';
+                    };
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+        </script>
+    </table>
+        <br>
+        <br>
+    </div>
+    <div
+    class="column" style="float: left; text-align: left; width: 60%; padding: 10px;">
+    <table>
+        <tr>
+            <td>Barang yang dipesan</td>
+            <td>: <Input type="text" cols="30" rows="2"></td>
+        </tr>
+        <tr>
+            <td>Deskripsi</td>
+            <td>: <textarea name="instruction" id="instruction" cols="35" rows="10">
+Tahun :
+
+Model :
+
+Kondisi :
+            </textarea></td>
+        </tr>
+        <tr>
+            <td>Total Tagihan</td>
+            <td>: <Input type="text"></td>
+        </tr>
+        <tr>
+            <td>Bayar ke</td>
+            <td>: <Input type="number"></td>
+        </tr>
+        <tr>
+            <td>Pemilik rekening</td>
+            <td>: <Input type="text"></td>
+        </tr>
+    <tr>
+            <td>Transaksi</td>
+            <td>: 
+            <select name="pizzas" size="1" colspan="">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          </select>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>          * Jika transaksi untuk tiga orang, Pilih 3 pada list drop-down diatas
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td style="color:green"><input type="checkbox" font-color="green">Kirim ke Telpon Genggam</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td style="color:green"><input type="checkbox" font-color="green">Kirim ke Email</td>
+    </tr>
+    <tr>
+        <td>Kirim ke telpon Genggam</td>
+        <td>: <Input type="text"></td>
+    </tr>
+    <tr>
+        <td>Kirim ke Email</td>
+        <td>: <Input type="text"></td>
+    </tr>
+    </table>
+    <hr>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <input type="submit" value="Buat Pesanan !"></form>
+    </div>
+    <footer class="footer" style="float: left; text-align: center; width: 100%; padding: 10px; background-color: #1e1d1d; color:#fff">
+        <p>&copy; 2023 Monster Inc. Hak cipta dilindungi undang-undang.</p>
+    </footer>
+</body>
+</html>
