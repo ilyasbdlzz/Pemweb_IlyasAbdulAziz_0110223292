@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTS Pemrogaman Web Ilyas</title>
+</head>
+
+<body style="background-color: black; color:white; font-family: sans-serif; ">
+    <h1 style="text-align: center;">"UTS Pemrogaman Web"</h1>
+    <fieldset style="margin-left: auto; margin-right:auto; margin-bottom: 20px; width: 600px; margin-top: 50px; background-color: #121212; border: 1px solid #121212 ;
+    border-radius: 15px ;">
+        <table style="margin-left: auto; margin-right:auto;">
+            <tr>
+                <td>
+                    <p>Cari Sivitas Akademika</p>
+                </td>
+                <td>
+                    <form action="/search" method="get">
+                        <label for="searchInput"></label>
+                        <input type="text" id="searchInput" name="q" placeholder="Cari Universitas">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Nama Lengkap :</td>
+                <td>Ilyas Abdul Aziz</td>
+            </tr>
+            <tr>
+                <td>Asal Prodi :</td>
+                <td>Teknik informatika</td>
+            </tr>
+            <tr>
+                <td>Status :</td>
+                <td>Mahasiswa</td>
+            </tr>
+            <tr>
+                <td>Jenis Kendaraan :</td>
+                <td>
+                    <input type="radio" id="kendaraan" name="kendaraan" value="motor">Motor
+                    <input type="radio" id="kendaraan1" name="kendaraan" value="mobil">Mobil
+                </td>
+            </tr>
+            <tr>
+                <td>Nopol :</td>
+                <td><input type="text" id="nopol" name="nopol"></td>
+            </tr>
+            <tr>
+                <td>Merk :</td>
+                <td><input type="text" id="merk" name="merk"></td>
+            </tr>
+            <tr>
+                <td>Upload STNK :</td>
+                <td><input type="text" id="STNK" name="STNK"><input type="file"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <form action="submit" method="post">
+                        <button
+                            style="padding: 7px 10px; border-radius: 7px; border: 0; background-color: green;color: white;"
+                            type="submit" name="submit">Daftar</button>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+</body>
+
+</html>
