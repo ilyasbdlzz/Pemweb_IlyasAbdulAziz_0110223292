@@ -1,0 +1,35 @@
+footer{
+    background-color: #262626;
+    color: white;
+}
+#logofooter{
+display: flex;
+flex-direction: row;
+justify-content: start;
+}
+.socialmedia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.svg{
+    display: flex;
+    flex-direction: row;
+}
+.svg a{
+    margin: 1rem;
+}
+.subscribe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#subscribe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
