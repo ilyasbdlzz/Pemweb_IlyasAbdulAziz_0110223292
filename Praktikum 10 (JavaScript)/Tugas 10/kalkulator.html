@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+</head>
+
+<body>
+    <h1 style="text-align:center; font-family:sans-serif; background-color:khaki;">Kalkulator Sederhana</h1>
+    <div style="text-align: center;">
+        <label for="bil1">Bilangan 1</label>
+        <input type="number" id="bil1" onchange="kalkulator()">
+        <p>+</p>
+        <label for="bil2">Bilangan 2</label>
+        <input type="number" id="bil2" onchange="kalkulator()">
+        <p>=</p>
+        <div style="margin-left:auto; margin-right:auto; width: 250px; border: 1px solid black;"><span
+                id="hasilJumlah"></span></div>
+    </div>
+    <script src="kalkulator.js"></script>
+</body>
+
+</html>
