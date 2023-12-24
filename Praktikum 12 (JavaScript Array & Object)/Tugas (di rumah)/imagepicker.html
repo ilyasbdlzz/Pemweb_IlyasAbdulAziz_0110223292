@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Image Picker</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Image Picker</title>
+    </head>
+
+    <body>
+        <h2>Image Picker</h2>
+
+        <label for="pilihGambar">Pilih Gambar:</label>
+        <select id="pilihGambar" onchange="tampilkanGambar()">
+            <option value="gorila">Gorila</option>
+            <option value="bison">Bison</option>
+            <option value="gajah">Gajah</option>
+            <option value="singa">Singa</option>
+            <option value="zebra">Zebra</option>
+        </select>
+        <br>
+        <br>
+
+        <img src="assets/gorila.png" id="gambarTerpilih" alt="Gambar Terpilih" width="300" />
+
+        <script>
+            function tampilkanGambar() {
+                let nilaiTerpilih = document.getElementById("pilihGambar").value;
+                let gambarTerpilih = document.getElementById("gambarTerpilih");
+
+                // Menampilkan gambar sesuai dengan pilihan dropdown
+                switch (nilaiTerpilih) {
+                    case "gorila":
+                        gambarTerpilih.src = "assets/gorila.png";
+                        alert("Kamu akan melihat gambar Gorilla");
+                        break;
+                    case "bison":
+                        gambarTerpilih.src = "assets/bison.png";
+                        alert("Kamu akan melihat gambar Bison");
+                        break;
+                    case "gajah":
+                        gambarTerpilih.src = "assets/gajah.png";
+                        alert("Kamu akan melihat gambar Gajah");
+                        break;
+                    case "singa":
+                        gambarTerpilih.src = "assets/singa.png";
+                        alert("Kamu akan melihat gambar Singa");
+                        break;
+                    case "zebra":
+                        gambarTerpilih.src = "assets/zebra.png";
+                        alert("Kamu akan melihat gambar Zebra");
+                        break;
+                }
+            }
+        </script>
+    </body>
+
+    </html>
+</body>
+
+</html>
+
+
+</body>
+
+</html>
